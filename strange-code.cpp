@@ -6,7 +6,8 @@
 #define ldb long double
 using namespace std;
 
-int main() {
+int main() 
+{
   ios_base::sync_with_stdio(0);
   cin.tie(0);
   cout.tie(0);
@@ -16,7 +17,8 @@ int main() {
 
   ll c = 1, v = 3;
 
-  while (c + v <= n) {
+  while (c + v <= n) 
+  {
     c = c + v;
     v *= 2;
   }

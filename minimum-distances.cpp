@@ -15,17 +15,15 @@ int main() {
   cin >> n;
 
   map<int, int> mp;
-  for (int i = 1; i <= n; i++) {
+  for (int i = 1; i <= n; i++) 
+  {
     cin >> a;
-    if (mp[a])
-      ans = min(ans, i - mp[a]);
+    if (mp[a]) ans = min(ans, i - mp[a]);
     mp[a] = i;
   }
 
-  if (ans == INT_MAX)
-    cout << -1;
-  else
-    cout << ans;
+  if (ans == INT_MAX) cout << -1;
+  else cout << ans;
 
   return 0;
 }

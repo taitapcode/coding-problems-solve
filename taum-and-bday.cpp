@@ -6,31 +6,30 @@
 #define ldb long double
 using namespace std;
 
-ll solve() {
+ll solve() 
+{
   ll b, w, bc, wc, z;
   cin >> b >> w >> bc >> wc >> z;
 
-  if (bc < wc) {
+  if (bc < wc) 
+  {
     swap(bc, wc);
     swap(b, w);
   }
 
-  if (bc > wc + z) {
-    return (b + w) * wc + z * b;
-  }
-
+  if (bc > wc + z) return (b + w) * wc + z * b;
   return b * bc + w * wc;
 }
 
-int main() {
+int main() 
+{
   ios_base::sync_with_stdio(0);
   cin.tie(0);
   cout.tie(0);
 
   int t;
   cin >> t;
-  while (t--)
-    cout << solve() << el;
+  while (t--) cout << solve() << el;
 
   return 0;
 }
